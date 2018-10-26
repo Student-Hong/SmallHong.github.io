@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>小宏同学</title>
   
-  <subtitle>全栈开发</subtitle>
+  <subtitle>忠于开发的前端爱好者</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superxiaohong.com/"/>
@@ -10,7 +10,7 @@
   <id>https://www.superxiaohong.com/</id>
   
   <author>
-    <name>Decade Hong</name>
+    <name>小宏同学</name>
     
   </author>
   
