@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superxiaohong.com/"/>
-  <updated>2018-10-26T09:58:13.520Z</updated>
+  <updated>2018-10-27T11:42:10.502Z</updated>
   <id>https://www.superxiaohong.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>swoole+redis直播环境搭建</title>
+    <link href="https://www.superxiaohong.com/2018/10/27/swoole-redis%E7%9B%B4%E6%92%AD%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://www.superxiaohong.com/2018/10/27/swoole-redis直播环境搭建/</id>
+    <published>2018-10-27T11:42:10.000Z</published>
+    <updated>2018-10-27T11:42:10.502Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>swoole环境安装</title>

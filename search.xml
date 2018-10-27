@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[swoole+redis直播环境搭建]]></title>
+    <url>%2F2018%2F10%2F27%2Fswoole-redis%E7%9B%B4%E6%92%AD%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[swoole环境安装]]></title>
     <url>%2F2018%2F10%2F26%2Fswoole%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%2F</url>
     <content type="text"><![CDATA[小宏同学最近在学习过程中遇到了有关直播的问题，写此篇文章用来积累一下。本篇主要内容包括 swoole环境配置安装（想到的点会在下一篇有关swoole的文章补充。。） 一、什么是swoole？这里就简单说了哈，swoole是php的一个扩展，用于即时通信的功能。想更多的了解概念性的问题，可以参考swoole官方文档。 二、swoole的简易安装过程在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足 php-7.2.0 或以上 因为swoole为4.2.3以上 gcc-4.4 或更高版本：rpm -qa|grep gcc make ：rpm -qa|grep make autoconf ：rpm -qa|grep autoconf]]></content>
