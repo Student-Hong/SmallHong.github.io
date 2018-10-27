@@ -88,16 +88,19 @@
 
 
 
+<meta name="description" content="小宏同学最近在学习过程中遇到了有关直播的问题，写此篇文章用来积累一下。本篇主要内容包括  swoole环境配置安装 与redis的结合">
 <meta name="keywords" content="swoole,redis,直播">
 <meta property="og:type" content="article">
 <meta property="og:title" content="swoole+redis直播环境搭建">
 <meta property="og:url" content="https://www.superxiaohong.com/2018/10/27/swoole-redis直播环境搭建/index.html">
 <meta property="og:site_name" content="小宏同学">
+<meta property="og:description" content="小宏同学最近在学习过程中遇到了有关直播的问题，写此篇文章用来积累一下。本篇主要内容包括  swoole环境配置安装 与redis的结合">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://www.superxiaohong.com/2018/10/27/swoole-redis直播环境搭建/1.jpg">
-<meta property="og:updated_time" content="2018-10-27T11:53:39.884Z">
+<meta property="og:updated_time" content="2018-10-27T12:10:55.556Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="swoole+redis直播环境搭建">
+<meta name="twitter:description" content="小宏同学最近在学习过程中遇到了有关直播的问题，写此篇文章用来积累一下。本篇主要内容包括  swoole环境配置安装 与redis的结合">
 <meta name="twitter:image" content="https://www.superxiaohong.com/2018/10/27/swoole-redis直播环境搭建/1.jpg">
 
 
@@ -388,7 +391,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  283
                 </span>
               
 
@@ -426,6 +429,20 @@
 
       
         <p><img src="/2018/10/27/swoole-redis直播环境搭建/1.jpg" alt="啦啦啦"></p>
+<p>小宏同学最近在学习过程中遇到了有关直播的问题，写此篇文章用来积累一下。本篇主要内容包括</p>
+<ul>
+<li>swoole环境配置安装</li>
+<li>与redis的结合</li>
+</ul>
+<a id="more"></a>
+<h3 id="Hello，艾维巴得，我是小宏童鞋，从今天起我的博客就正式开始啦，搭blog嘛，主要是为了我这只小菜鸟学习，还希望光顾我这的大佬们多多指教。好啦，废话不多说，开始阅读我的处女作吧。"><a href="#Hello，艾维巴得，我是小宏童鞋，从今天起我的博客就正式开始啦，搭blog嘛，主要是为了我这只小菜鸟学习，还希望光顾我这的大佬们多多指教。好啦，废话不多说，开始阅读我的处女作吧。" class="headerlink" title="Hello，艾维巴得，我是小宏童鞋，从今天起我的博客就正式开始啦，搭blog嘛，主要是为了我这只小菜鸟学习，还希望光顾我这的大佬们多多指教。好啦，废话不多说，开始阅读我的处女作吧。"></a>Hello，艾维巴得，我是小宏童鞋，从今天起我的博客就正式开始啦，搭blog嘛，主要是为了我这只小菜鸟学习，还希望光顾我这的大佬们多多指教。好啦，废话不多说，开始阅读我的处女作吧。</h3><h4 id="一、什么是swoole？"><a href="#一、什么是swoole？" class="headerlink" title="一、什么是swoole？"></a>一、什么是swoole？</h4><p>这里就简单说了哈，swoole是php的一个扩展，用于即时通信的功能。想更多的了解概念性的问题，可以参考<a href="https://www.swoole.com/" target="_blank" rel="noopener">swoole官方文档</a>。</p>
+<h4 id="二、swoole的简易安装过程"><a href="#二、swoole的简易安装过程" class="headerlink" title="二、swoole的简易安装过程"></a>二、swoole的简易安装过程</h4><h2 id="在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足"><a href="#在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足" class="headerlink" title="在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足"></a>在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足</h2><ul>
+<li>php-7.2.0 或以上  因为swoole为4.2.3以上</li>
+<li>gcc-4.4 或更高版本：rpm -qa|grep gcc</li>
+<li>make ：rpm -qa|grep make</li>
+<li>autoconf ：rpm -qa|grep autoconf<h2 id="大家可以参考一下小宏同学提供的安装语句"><a href="#大家可以参考一下小宏同学提供的安装语句" class="headerlink" title="大家可以参考一下小宏同学提供的安装语句"></a>大家可以参考一下小宏同学提供的安装语句</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc gcc-c++ libxml2 libxml2-devel git autoconf telnet pcre-devel curl-devel</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -536,8 +553,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -622,6 +648,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hello，艾维巴得，我是小宏童鞋，从今天起我的博客就正式开始啦，搭blog嘛，主要是为了我这只小菜鸟学习，还希望光顾我这的大佬们多多指教。好啦，废话不多说，开始阅读我的处女作吧。"><span class="nav-number">1.</span> <span class="nav-text">Hello，艾维巴得，我是小宏童鞋，从今天起我的博客就正式开始啦，搭blog嘛，主要是为了我这只小菜鸟学习，还希望光顾我这的大佬们多多指教。好啦，废话不多说，开始阅读我的处女作吧。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、什么是swoole？"><span class="nav-number">1.1.</span> <span class="nav-text">一、什么是swoole？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、swoole的简易安装过程"><span class="nav-number">1.2.</span> <span class="nav-text">二、swoole的简易安装过程</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足"><span class="nav-number"></span> <span class="nav-text">在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大家可以参考一下小宏同学提供的安装语句"><span class="nav-number"></span> <span class="nav-text">大家可以参考一下小宏同学提供的安装语句</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -650,7 +692,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">581</span>
+    <span title="Site words total count">925</span>
   
 -->
 </div>
@@ -677,7 +719,7 @@
 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共581字</span>
+  <span class="post-count">博客全站共925字</span>
 </div>
 
         
