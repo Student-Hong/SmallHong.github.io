@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[swoole+redis直播环境搭建]]></title>
     <url>%2F2018%2F10%2F27%2Fswoole-redis%E7%9B%B4%E6%92%AD%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
-    <content type="text"><![CDATA[小宏同学最近在学习过程中遇到了有关直播的问题，写此篇文章用来积累一下。本篇主要内容包括 swoole环境配置安装 与redis的结合 Hello，艾维巴得，我是小宏童鞋，从今天起我的博客就正式开始啦，搭blog嘛，主要是为了我这只小菜鸟学习，还希望光顾我这的大佬们多多指教。好啦，废话不多说，开始阅读我的处女作吧。一、什么是swoole？这里就简单说了哈，swoole是php的一个扩展，用于即时通信的功能。想更多的了解概念性的问题，可以参考swoole官方文档。 二、swoole的简易安装过程在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足 php-7.2.0 或以上 因为swoole为4.2.3以上 gcc-4.4 或更高版本：rpm -qa|grep gcc make ：rpm -qa|grep make autoconf ：rpm -qa|grep autoconf大家可以参考一下小宏同学提供的安装语句1yum -y install gcc gcc-c++ libxml2 libxml2-devel git autoconf telnet pcre-devel curl-devel]]></content>
+    <content type="text"><![CDATA[小宏同学最近在学习过程中遇到了有关直播的问题，写此篇文章用来积累一下。本篇主要内容包括 swoole环境配置安装 与redis的结合 Hello，艾维巴得，我是小宏童鞋，从今天起我的博客就正式开始啦，搭blog嘛，主要是为了我这只小菜鸟学习，还希望光顾我这的大佬们多多指教。好啦，废话不多说，开始阅读我的处女作吧。一、什么是swoole？这里就简单说了哈，swoole是php的一个扩展，用于即时通信的功能。想更多的了解概念性的问题，可以参考swoole官方文档。 二、swoole的简易安装过程在安装之前呢，小宏同学要提醒大家，要先确保以下条件是否满足 php-7.2.0 或以上 因为swoole为4.2.3以上 gcc-4.4 或更高版本：rpm -qa|grep gcc make ：rpm -qa|grep make autoconf ：rpm -qa|grep autoconf大家可以参考一下小宏同学提供的安装语句1yum -y install gcc gcc-c++ libxml2 libxml2-devel git autoconf telnet pcre-devel curl-devel 1,下载swoole包到根目录1wget https://github.com/swoole/swoole-src/archive/v4.2.3.tar.gz 2,解压并进入目录12tar zxf v4.2.3.tar.gzcd swoole-src-4.2.3/ 3,使用phpize生成php编译设置(根据自己服务器phpize所在目录运行，也可以尝试直接phpize)1/usr/bin/phpize 出现类似下列语句则表示成功1234Configuring for:PHP Api Version: 20121113Zend Module Api No: 20121212Zend Extension Api No: 220121212]]></content>
       <categories>
         <category>环境配置</category>
       </categories>
