@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>前言</title>
-      <link href="/2019/03/25/%E5%89%8D%E8%A8%80/"/>
-      <url>/2019/03/25/%E5%89%8D%E8%A8%80/</url>
-      
-        <content type="html"><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><pre><code>大家好，我是小宏同学，一名前端开发的忠实爱好者。从今天嘛，我就开始要用博客记录下我的IT学习生涯了。这其中大多都是在学习中我认为有趣却又重要的点，一方面是为了自己更好的学习，同时也希望可以帮助到同行的哥哥姐姐们，如果你们也能帮助我在其中遇到的问题。那更是再好不过了。闲言少叙，从下一篇，我们一起学习吧！</code></pre>]]></content>
-      
-      
+<search>
+  <entry>
+    <title><![CDATA[前言]]></title>
+    <url>%2F2019%2F03%2F25%2F%E5%89%8D%E8%A8%80%2F</url>
+    <content type="text"><![CDATA[写在前面 1大家好，我是小宏同学，一名前端开发的忠实爱好者。从今天嘛，我就开始要用博客记录下我的IT学习生涯了。这其中大多都是在学习中我认为有趣却又重要的点，一方面是为了自己更好的学习，同时也希望可以帮助到同行的哥哥姐姐们，如果你们也能帮助我在其中遇到的问题。那更是再好不过了。闲言少叙，从下一篇，我们一起学习吧！]]></content>
       <categories>
-          
-          <category> 其他 </category>
-          
+        <category>其他</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> others </tag>
-            
-        </tags>
-      
-    </entry>
-    
-  
-  
+      <tags>
+        <tag>others</tag>
+      </tags>
+  </entry>
 </search>
