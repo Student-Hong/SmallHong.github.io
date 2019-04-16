@@ -96,10 +96,12 @@
 <meta property="og:site_name" content="小宏同学">
 <meta property="og:description" content="本节概要1，原始类型与对象类型2，typeof和instanceof的原理与区别">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-16T01:25:23.377Z">
+<meta property="og:image" content="https://www.superxiaohong.com/2019/04/15/【面试前传】JS中的一些小问题（一）/1-1.jpg">
+<meta property="og:updated_time" content="2019-04-16T02:15:52.159Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【面试前传】JS中的一些小问题（一）">
 <meta name="twitter:description" content="本节概要1，原始类型与对象类型2，typeof和instanceof的原理与区别">
+<meta name="twitter:image" content="https://www.superxiaohong.com/2019/04/15/【面试前传】JS中的一些小问题（一）/1-1.jpg">
 
 
 
@@ -389,7 +391,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  213
+                  851
                 </span>
               
 
@@ -405,7 +407,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -434,7 +436,22 @@
 <p><a href="https://www.cnblogs.com/tangjiao/p/10039659.html" target="_blank" rel="noopener">ES6的原始类型数据——Symbol</a></p>
 <p>接下来我们就说说这里的小问题</p>
 <p>1，首先嘛，<strong>NULL不是对象</strong>，但是细心的小伙伴们会发现当你打印<code>typeof null</code>的值的时候，返回的却是<code>Object</code>？？这是为什么呢？</p>
-<p>通过查阅资料发现</p>
+<p>通过查阅资料发现,其实这是 JS 存在的一个很久很久的Bug。在 JS 的最初版本中使用的是 32 位系统，为了性能考虑使用低位存储变量的类型信息，000 开头代表是对象，然而 null 表示为全零，所以将它错误的判断为 object 。虽然现在的内部类型判断代码已经改变了，但是对于这个 Bug 却是一直流传下来。小宏觉得可能是留作纪念用的。。</p>
+<p>2，<strong>JS的Number是浮点型</strong>，小宏同学在使用的时候就遇到了一些bug</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0.1</span> + <span class="number">0.2</span> !== <span class="number">0.3</span> <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<p>小宏对这个结果也是不怎么太明白，后面研究透了我会做出补充。</p>
+<p>3，<strong>原始类型存储的都是值，是没有函数阔以调用的</strong><br>比如说，<code>undefined.toString()</code></p>
+<img src="/2019/04/15/【面试前传】JS中的一些小问题（一）/1-1.jpg">
+<p>####二、对象类型</p>
+<p>当然啦，在JS中，除了原始类型，那就是对象类型了。在这里呢，小宏对对象类型也不做详细说明。只想说一下<strong>原始类型与对象类型有啥子不同</strong>，其实，简单的说，<strong>原始类型存储的是值，而对象类型存储的是地址（指针）</strong>。</p>
+<p>比如下列代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = []</span><br><span class="line"><span class="keyword">const</span> b = a</span><br><span class="line">b.push(<span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
+<p>细心的小伙伴会发现，代码运行后<strong>两个变量的值都发生了改变</strong></p>
+<p>我们可以这样看，对于常量 a ，我们假设内存地址为 #xiaohong，那么在地址 #xiaohong 的位置存放了值 []，常量 a 存放了地址#xiaohong，当我们将变量赋值给另外一个变量时，复制的是原本变量的地址，也就是说当前变量 b 存放的地址也是 #xiaohong，当我们进行数据修改的时候，就会修改存放在地址 #xiaohong 上的值，也就导致了两个变量的值都发生了改变。</p>
+<p>####三、<code>typeof</code>和<code>instanceof</code></p>
+<p>相信大家对这两者是在熟悉不过了，那小宏就做一个简单的总结就好了</p>
+<p>1，<strong><code>typeof</code>除了<code>null</code>都可以正确判断（原始类型）；除了函数都会显示<code>object</code>（对象类型）。</strong>也就是说，typeof其实是不能准确判断的。</p>
+<p>2，<strong><code>instanceof</code>主要用于对象的判断，当其用于原始类型的判断时，并不能返回正确的结果</strong>，（听大佬说可以通过<code>Symbol.hasInstance</code>来对<code>instanceof</code>行为进行重定义。小宏也不太懂，麻烦大佬在评论区进行解释，蟹蟹）。</p>
+<p>好啦，今天的内容就先到这里，还希望大佬们多多支持。Fighting！</p>
 
       
     </div>
@@ -566,7 +583,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -668,7 +685,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">213</span>
+    <span title="Site words total count">851</span>
   
 -->
 </div>
@@ -695,7 +712,7 @@
 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共213字</span>
+  <span class="post-count">博客全站共851字</span>
 </div>
 
         
