@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superxiaohong.com/"/>
-  <updated>2019-04-15T09:43:57.128Z</updated>
+  <updated>2019-04-16T01:25:23.377Z</updated>
   <id>https://www.superxiaohong.com/</id>
   
   <author>
@@ -21,14 +21,13 @@
     <link href="https://www.superxiaohong.com/2019/04/15/%E3%80%90%E9%9D%A2%E8%AF%95%E5%89%8D%E4%BC%A0%E3%80%91JS%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E9%97%AE%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>https://www.superxiaohong.com/2019/04/15/【面试前传】JS中的一些小问题（一）/</id>
     <published>2019-04-15T09:06:04.000Z</published>
-    <updated>2019-04-15T09:43:57.128Z</updated>
+    <updated>2019-04-16T01:25:23.377Z</updated>
     
-    <content type="html"><![CDATA[<p>####本节概要</p><p>1，原始类型与对象类型<br>2，<code>typeof</code>和<code>instanceof</code>的原理与区别</p><a id="more"></a><p>####一、原始类型<br>学过ES6的小伙伴们都知道，原始类型呢，主要分为六种分别是</p><p><code>Boolean</code>,<code>Null</code>,<code>Undefined</code>,<code>Number</code>,<code>String</code>,<code>Symbol</code></p><p>当然，这些类型的详细概念就不用我多做解释啦，只不过，小宏同学在学习时对<code>Symbol</code>不是特别理解，多亏大佬的帮忙，小伙伴们若想对<code>Symbol</code>了解的更详细的话，不妨参考一下如下文章，或许会有所帮助。</p><p><a href="https://www.cnblogs.com/tangjiao/p/10039659.html" target="_blank" rel="noopener">ES6的原始类型数据——Symbol</a></p><p>接下来我们就说说这里的小问题</p><p>1，首先嘛，<strong>NULL不是对象</strong>，但是细心的小伙伴们会发现当你打印<code>typeof null</code>的值的时候，返回的却是<code>Object</code>？？这是为什么呢？</p><p>通过查阅资料发现</p>]]></content>
+    <content type="html"><![CDATA[<h4 id="本节概要"><a href="#本节概要" class="headerlink" title="本节概要"></a>本节概要</h4><p>1，原始类型与对象类型<br>2，<code>typeof</code>和<code>instanceof</code>的原理与区别</p><a id="more"></a><h4 id="一、原始类型"><a href="#一、原始类型" class="headerlink" title="一、原始类型"></a>一、原始类型</h4><p>学过ES6的小伙伴们都知道，原始类型呢，主要分为六种分别是</p><p><code>Boolean</code>,<code>Null</code>,<code>Undefined</code>,<code>Number</code>,<code>String</code>,<code>Symbol</code></p><p>当然，这些类型的详细概念就不用我多做解释啦，只不过，小宏同学在学习时对<code>Symbol</code>不是特别理解，多亏大佬的帮忙，小伙伴们若想对<code>Symbol</code>了解的更详细的话，不妨参考一下如下文章，或许会有所帮助。</p><p><a href="https://www.cnblogs.com/tangjiao/p/10039659.html" target="_blank" rel="noopener">ES6的原始类型数据——Symbol</a></p><p>接下来我们就说说这里的小问题</p><p>1，首先嘛，<strong>NULL不是对象</strong>，但是细心的小伙伴们会发现当你打印<code>typeof null</code>的值的时候，返回的却是<code>Object</code>？？这是为什么呢？</p><p>通过查阅资料发现</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;####本节概要&lt;/p&gt;
-&lt;p&gt;1，原始类型与对象类型&lt;br&gt;2，&lt;code&gt;typeof&lt;/code&gt;和&lt;code&gt;instanceof&lt;/code&gt;的原理与区别&lt;/p&gt;
+      &lt;h4 id=&quot;本节概要&quot;&gt;&lt;a href=&quot;#本节概要&quot; class=&quot;headerlink&quot; title=&quot;本节概要&quot;&gt;&lt;/a&gt;本节概要&lt;/h4&gt;&lt;p&gt;1，原始类型与对象类型&lt;br&gt;2，&lt;code&gt;typeof&lt;/code&gt;和&lt;code&gt;instanceof&lt;/code&gt;的原理与区别&lt;/p&gt;
     
     </summary>
     

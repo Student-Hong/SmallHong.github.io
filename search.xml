@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[【面试前传】JS中的一些小问题（一）]]></title>
     <url>%2F2019%2F04%2F15%2F%E3%80%90%E9%9D%A2%E8%AF%95%E5%89%8D%E4%BC%A0%E3%80%91JS%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E9%97%AE%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[####本节概要 1，原始类型与对象类型2，typeof和instanceof的原理与区别 ####一、原始类型学过ES6的小伙伴们都知道，原始类型呢，主要分为六种分别是 Boolean,Null,Undefined,Number,String,Symbol 当然，这些类型的详细概念就不用我多做解释啦，只不过，小宏同学在学习时对Symbol不是特别理解，多亏大佬的帮忙，小伙伴们若想对Symbol了解的更详细的话，不妨参考一下如下文章，或许会有所帮助。 ES6的原始类型数据——Symbol 接下来我们就说说这里的小问题 1，首先嘛，NULL不是对象，但是细心的小伙伴们会发现当你打印typeof null的值的时候，返回的却是Object？？这是为什么呢？ 通过查阅资料发现]]></content>
+    <content type="text"><![CDATA[本节概要1，原始类型与对象类型2，typeof和instanceof的原理与区别 一、原始类型学过ES6的小伙伴们都知道，原始类型呢，主要分为六种分别是 Boolean,Null,Undefined,Number,String,Symbol 当然，这些类型的详细概念就不用我多做解释啦，只不过，小宏同学在学习时对Symbol不是特别理解，多亏大佬的帮忙，小伙伴们若想对Symbol了解的更详细的话，不妨参考一下如下文章，或许会有所帮助。 ES6的原始类型数据——Symbol 接下来我们就说说这里的小问题 1，首先嘛，NULL不是对象，但是细心的小伙伴们会发现当你打印typeof null的值的时候，返回的却是Object？？这是为什么呢？ 通过查阅资料发现]]></content>
       <categories>
         <category>面试</category>
       </categories>
